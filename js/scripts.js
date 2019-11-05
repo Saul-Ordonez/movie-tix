@@ -8,17 +8,18 @@ function Ticket(movieName, movieTime, userAge, ticketPrice) {
 // function generateTicket() {
   Ticket.prototype.changeValue = function() {
     if (this.movieName === 'spiderman') {
-      return this.ticketPrice += 2;
+      this.ticketPrice += 2;
     }
     if (this.movieTime === 'matinee') {
-      return this.ticketPrice -= 2;
+      this.ticketPrice -= 2;
     }
     if (this.userAge === 'young' || this.userAge === 'senior') {
-      return this.ticketPrice -= 2;
+      this.ticketPrice -= 2;
     }
+    return this.ticketPrice;
   }
 
-  change last if statement
+
   //   return this.ticketPrice;
   //   console.log(this.ticketPrice);
   // }
