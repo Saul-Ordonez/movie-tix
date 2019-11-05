@@ -1,0 +1,29 @@
+#show-ticket {
+  display: none;
+}
+
+body {
+  background-image: url("https://jooinn.com/images/popcorn-movies-tickets-cinema.jpg");
+  font-family: 'Bowlby One SC', cursive;
+  color: #ffcc00;
+  text-shadow: 2px 2px black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.form-group {
+  font-size: 18px;
+}
+
+.well {
+  background-color: darkred;
+}
+
+span {
+  font-family: 'Righteous', cursive;
+}

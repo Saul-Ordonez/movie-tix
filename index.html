@@ -6,34 +6,44 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery.js" charset="utf-8"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Righteous&display=swap" rel="stylesheet">
     <title>Movie Tickets</title>
   </head>
   <body>
     <div class="container">
+      <h1>Online Ticket Office</h1>
       <form id="movie-input">
         <div class="form-group">
-          <p>Movies</p>
-          <input type="radio" name="movie-name" value="spiderman">Spiderman<br>
-          <input type="radio" name="movie-name" value="batman">Batman<br>
-          <input type="radio" name="movie-name" value="joker">Joker<br>
+          <h2>Movies</h2>
+          <input type="radio" name="movie-name" value="Spiderman"> Spiderman<br>
+          <input type="radio" name="movie-name" value="Batman"> Batman<br>
+          <input type="radio" name="movie-name" value="Joker"> Joker<br>
         </div>
         <div class="form-group">
-          <p>Showtimes</p>
-          <input type="radio" name="movie-time" value="matinee">12:30 PM<br>
-          <input type="radio" name="movie-time" value="afternoon">4:30 PM<br>
-          <input type="radio" name="movie-time" value="primetime">7:30 PM<br>
+          <h2>Showtimes</h2>
+          <input type="radio" name="movie-time" value="12:30 PM"> 12:30 PM<br>
+          <input type="radio" name="movie-time" value="4:30 PM"> 4:30 PM<br>
+          <input type="radio" name="movie-time" value="7:30 PM"> 7:30 PM<br>
         </div>
         <div class="form-group">
-          <p>Prices</p>
-          <input type="radio" name="age" value="young">Youth (under 13)<br>
-          <input type="radio" name="age" value="adult">Adult (over 13)<br>
-          <input type="radio" name="age" value="senior">Senior (over 60)<br>
+          <h2>Prices</h2>
+          <input type="radio" name="age" value="Youth"> Youth (under 13)<br>
+          <input type="radio" name="age" value="Adult"> Adult (over 13)<br>
+          <input type="radio" name="age" value="Senior"> Senior (over 60)<br>
         </div>
         <button type="submit" class="btn-success" name="button">Submit</button>
       </form>
-      <div>
-
-
+      <br>
+      <br>
+      <div id="show-ticket">
+          <div class="col-md-3">
+            <div class="well">
+            <p>Movie Title: <span class="userMovie"></span></p>
+            <p>Showtime: <span class="userShowtime"></span></p>
+            <p>Ticket Type: <span class="userTicket"></span></p>
+            <p>Total: $<span class="userPrice"></span>.00</p>
+          </div>
+        </div>
       </div>
     </div>
 

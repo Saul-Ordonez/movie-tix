@@ -7,36 +7,18 @@ function Ticket(movieName, movieTime, userAge, ticketPrice) {
 
 // function generateTicket() {
   Ticket.prototype.changeValue = function() {
-    if (this.movieName === 'spiderman') {
+    if (this.movieName === 'Spiderman') {
       this.ticketPrice += 2;
     }
-    if (this.movieTime === 'matinee') {
+    if (this.movieTime === '12:30 PM') {
       this.ticketPrice -= 2;
     }
-    if (this.userAge === 'young' || this.userAge === 'senior') {
+    if (this.userAge === 'Youth' || this.userAge === 'Senior') {
       this.ticketPrice -= 2;
     }
     return this.ticketPrice;
   }
 
-
-  //   return this.ticketPrice;
-  //   console.log(this.ticketPrice);
-  // }
-  //
-  // Ticket.prototype.minusValue = function() {
-  //   this.ticketPrice -= 2;
-  //   return this.ticketPrice.minusValue;
-  // }
-  //
-  //
-    // if (this.movieTime === 'matinee') {
-    //   return this.ticketPrice.minusValue();
-    // }
-  //   if (this.userAge === 'young' || this.userAge === 'senior') {
-  //     return this.ticketPrice.minusValue();
-  //   }
-  // // }
 
 
 $(document).ready(function() {
@@ -48,6 +30,14 @@ $(document).ready(function() {
 
     var newTicket = new Ticket (movie, time, age);
     newTicket.changeValue();
+
+    $('.userMovie').html(newTicket.movieName);
+    $('.userShowtime').html(newTicket.movieTime);
+    $('.userTicket').html(newTicket.userAge);
+    $('.userPrice').html(newTicket.ticketPrice);
+
+    $('#show-ticket').show();
+
     console.log(newTicket);
   });
 });
